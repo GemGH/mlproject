@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Projects/mlproject/mlruns/0/a4e4c57ef7974ba98dc5a6403951e5c1/artifacts
+end_time: 1739277060049
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a4e4c57ef7974ba98dc5a6403951e5c1
+run_name: shivering-crow-515
+run_uuid: a4e4c57ef7974ba98dc5a6403951e5c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739277042679
+status: 3
+tags: []
+user_id: DELL
