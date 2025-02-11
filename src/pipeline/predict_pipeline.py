@@ -11,7 +11,6 @@ class PredictPipeline:
         pass
 
     def predict(self, features):
-        print("features are :     " ,  features)
         try:
             model_path = ModelTrainerConfig().trained_model_file_path
             preprocessor_path = DataTransformationConfig().preprocessor_obj_file_path ###.preprocessor_path
@@ -48,14 +47,15 @@ class CustomData:
         try:
             data = {
                 'gender': [self.gender],
-                'race/ethnicity': [self.race_ethnicity],
-                'parental level of education': [self.parental_level_of_education],
+                'race_ethnicity': [self.race_ethnicity],
+                'parental_level_of_education': [self.parental_level_of_education],
                 'lunch': [self.lunch],
-                'test preparation course': [self.test_preparation_course],
-                'reading score': [self.reading_score],
-                'writing score': [self.writing_score]
+                'test_preparation_course': [self.test_preparation_course],
+                'reading_score': [self.reading_score],
+                'writing_score': [self.writing_score]
             }
-
+            print("get_data_as_df   :",  pd.DataFrame(data))
             return pd.DataFrame(data)
+        
         except Exception as e:
             raise CustomException(e, sys)
